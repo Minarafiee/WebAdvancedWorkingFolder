@@ -1,0 +1,43 @@
+
+*GETTING INTO MYSQL IN TERMINAL*
+PATH=$PATH:/Applications/MAMP/Library/bin
+mysql -u root -p
+root
+
+*CREATING A DATABASE*
+CREATE DATABASE app_register;
+
+SHOW DATABASES;
+
+*CREATING A TABLE*
+USE [DATABASE_YOU_WANT_TO_USE];
+CREATE TABLE IF NOT EXISTS register (
+    id int(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    reg_date TIMESTAMP,
+    firstname varchar(30) NOT NULL,
+    lastname varchar(30) NOT NULL,
+    email varchar(50),
+    bio TEXT(255)
+);
+
+show columns in [TABLE_NAME];
+
+
+*ADDING/DROPPING A COLUMN INTO DATABASE*
+ALTER TABLE register ADD picture varbinary(39578) NULL AFTER bio;
+ALTER TABLE register ADD password binary(64) NOT NULL AFTER picture;
+
+
+ALTER TABLE register DROP picture; 
+
+*INSERTING RECORDS*
+INSERT INTO register (firstname, lastname, email, bio, picture)
+VALUES
+("Ambreen", "Hussain", "ambreenshussain@gmail.com", "Product Manager @Hearst, Adjunct Professor @mfadt, Strategic Planning Board Member @nyjl", '/Volumes/Data/Users/ahussain/Desktop/robot.png');
+
+SELECT * FROM register;
+
+*DROP TABLE*
+DROP TABLE register;
+
+SHOW register; (should see empty set)

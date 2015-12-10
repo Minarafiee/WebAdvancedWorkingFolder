@@ -1,0 +1,254 @@
+#logo {
+    position: absolute;
+    left: 43%;
+    top: 3%;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
+
+body{
+  margin:0;
+  text-align:center;
+  font-family: 'Special Elite', cursive;
+  font-size: 18px;
+    margin-top: 10%;
+    margin-right: 24%;
+    margin-left: 20%;
+    padding: 1%;
+    line-height: 1.7;
+  
+}
+
+h1 {
+  text-align:center;
+}
+
+.container {
+  width:90%;
+  margin:0 auto;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+label {
+  width:18%;
+  float:left;
+  text-align:center;
+  background:#fff;
+  color:#222;
+  /*padding:3px;*/
+  margin:0%;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+
+
+
+#nav-button-audio {
+   
+    background-position: 0 -120px
+}
+
+a#nav-button-audio:hover{
+   
+    background-position: 0 -60px
+}
+
+input[type="radio"][id="image"]:checked + label {
+  background:#66f;
+
+}
+
+input[type="radio"][id="image"]:checked ~ .video, input[type="radio"][id="image"]:checked ~ .auido {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="video"]:checked + label {
+
+  background:#f46;
+}
+
+input[type="radio"][id="video"]:checked ~ .image, input[type="radio"][id="video"]:checked ~ .auido {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="auido"]:checked + label {
+  background:#6d9;
+}
+
+input[type="radio"][id="auido"]:checked ~ .image, input[type="radio"][id="auido"]:checked ~ .video {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="text"]:checked ~ .image, input[type="radio"][id="auido"]:checked ~ .video {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+
+
+.tile {
+  width:125px;
+  height:100px;
+  float:left;
+  transition:all 1s;
+  margin:4px;
+  padding:2px;
+  display: block;
+  background-color: red;
+}
+
+
+
+.audio{
+  background-size:100%;
+  background-position: center;
+}
+
+.image {
+  background-size:100%;
+  background-position: center;
+}
+
+
+
+
+#imagelabel{
+  -webkit-transition: all 0.25s ease;
+  background-image: url(../Icons/AllIconsFinal.png);
+  width:55px;
+  height:60px;
+  max-height: auto;
+   background-position: -120px -120px;
+   border-bottom: 5px solid white;
+}
+
+#imagelabel:hover {
+    background-position: -120px -60px;
+    border-bottom: 5px solid #FF0033;
+}
+ 
+#videolabel{
+  -webkit-transition: all 0.25s ease;
+  background-image: url(../Icons/AllIconsFinal.png);
+  width:55px;
+  height:60px;
+   background-position: -60px -120px;
+   margin-left:31px;
+   border-bottom: 5px solid white;
+
+}
+
+#videolabel:hover {
+    background-position: -60px -60px;
+    border-bottom: 5px  solid #FF0033;
+}
+
+
+#audiolabel{
+  -webkit-transition: all 0.25s ease;
+  background-image: url(../Icons/AllIconsFinal.png);
+  width:55px;
+  height:60px;
+  margin-left:44px;
+   background-position: 0 -120px;
+   border-bottom: 5px solid white;
+
+}
+
+#audiolabel:hover {
+    background-position: 0 -60px;
+    border-bottom: 5px solid #FF0033;
+}
+
+
+
+#textlabel{
+  -webkit-transition: all 0.25s ease;
+  background-image: url(../Icons/AllIconsFinal.png);
+  width:55px;
+  height:60px;
+   background-position: -180px -120px;
+   border-bottom: 5px solid white;
+}
+
+#textlabel:hover {
+    background-position: -180px -60px;
+    border-bottom: 5px solid #FF0033;
+}
+
+#resetlabel{
+  -webkit-transition: all 0.25s ease;
+  background-image: url(../Icons/AllIconsFinal.png);
+  width:55px;
+  height:60px;
+   background-position: -240px -120px;
+   margin-left: 48px;
+   margin-bottom: 5px;
+
+}
+#resetlabel:hover {
+    background-position: -240px -60px;
+    border-bottom: 5px solid #FF0033;
+    margin-bottom: 0px;
+}
+
+
+
+
+.video {
+  background-size:100%;
+  background-position: center;
+
+}
+.text{
+  background-size:100%;
+  background-position: center;
+
+}
+#saveForm{
+  margin:3px;
+}
+
+
+@media only screen and (max-width: 750px){
+
+  label {
+   /* width:;*/
+  }
+
+  body{
+    background-color: blue;
+
+  }
+
+}
+
+@media only screen and (max-width : 767px) and (orientation: portrait) {
+  label, .tile{
+    width: 100%;
+  }
+
+
+  .tile {height: 300px;}}

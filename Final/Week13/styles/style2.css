@@ -1,0 +1,207 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html,
+body,
+a {
+    height: 100%;
+    font-family: 'Special Elite', cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+* {
+    /* With these codes padding and border does not increase it's width. Gives intuitive style. */
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#main-menu .nav-bar a {
+     background-image: url(../Icons/alliconstest.png);
+   display: inline-block;
+    padding: 0 10px;
+    color: blue;
+    width:83px;
+    height:74px;
+    padding-left: 40px;
+
+}
+
+a#nav-button-audio {
+   
+    background-position: 0 -132px
+}
+
+a#nav-button-audio:hover{
+   
+    background-position: 0 -65px
+}
+
+a#nav-button-video {
+   
+    background-position: -80px -132px
+}
+
+a#nav-button-video:hover{
+   
+    background-position: -80px -65px
+}
+
+a#nav-button-image{
+   
+    background-position: -166px -132px
+}
+
+a#nav-button-image:hover{
+   
+    background-position:  -166px -65px
+}
+
+
+a#nav-button-text{
+    background-position: -250px -132px
+}
+
+a#nav-button-text:hover{
+    background-position: -250px -65px
+}
+ 
+#nav-button-image img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+#nav-button-text img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+nav a:hover {
+    color: #FF0033;
+    -webkit-transition: all 0.25s ease;
+    border-bottom: 5px solid #FF0033;
+}
+/*.imageclass {
+    width: 43%;
+    display: inline-block;
+    margin-top: 5%;
+   
+     border-radius: 25px;
+    width:331px; 
+    height:300px;
+  margin-left:25px;
+  margin-right: 25px;
+}*/
+
+
+
+
+
+ #audiobox {
+ background-image: url(../Images/text.png);
+/*background-repeat: no-repeat;*/
+  background-size: contain;
+   
+}
+
+#videobox {
+      background-image: url(../Images/video.png);
+    /*background-repeat: no-repeat;*/
+  background-size: contain;
+}
+#imagebox {
+    background-image: url(../Images/image.png);
+   /*background-repeat: no-repeat;*/
+  background-size: contain;
+}
+#textbox {
+    background-image: url(../Images/text.png);
+    /*background-repeat: no-repeat;*/
+  background-size: contain;
+}
+
+
+body {
+    font-size: 18px;
+    margin-top: 10%;
+    margin-right: 24%;
+    margin-left: 38%;
+    padding: 1%;
+}
+#imagelist img:hover {
+    border-color: blue;
+    border: 1px solid #FF0033;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#imagelist img {
+    border-radius: 20px;
+    margin-top: 10%;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 39%;
+    display: block;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+}
+ 
+
+ #saveForm{
+    margin-top:20px;
+
+ }
+ #choose{
+    margin-top:20px;
+    
+ }
+
+
+
+user agent stylesheethr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+Inherited from body body {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+    float: left;
+    font-family: 'Special Elite', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .7em;
+    margin-top: -12px;
+    margin-right: 20px;
+    border-bottom: 2px;
+    -webkit-transition: all 0.25s ease;
+}
+
+
+ .desc{
+    margin-top: 10px;
+ }
+#title1{
+    margin-top: 10px;
+
+}

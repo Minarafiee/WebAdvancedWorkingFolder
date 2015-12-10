@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form submission</title>
+    </head>
+
+    <body>
+        <?php
+            if( $_POST ){
+                $con = mysql_connect("localhost","test","test");
+            if (!$con)
+                {
+            die('Could not connect: ' . mysql_error());
+            }
+
+            mysql_select_db("test", $con);
+
+            mysql_close($con);
+            }
+        ?>
+
+
+    </body>
+</html>
